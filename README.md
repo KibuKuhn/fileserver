@@ -18,6 +18,8 @@ A Spring Boot based server that provides
  
 <br>
 
+Use profile *dev* to use port 8080
+
 **Usage**
  
 Download directories:

@@ -16,29 +16,3 @@ A Spring Boot based server that provides
  - an upload option  
 
  ![A demo](demo.png)
- 
-<br>
-
-Use profile *dev* to use port 8080
-
-**Usage**
- 
-Download directories:
-
-A comma separated list of directories: --downloadPaths=/path/to/some/folder,/path/to/some/other/folder, ... 
-
-Do NOT use whitespaces between commas.
-
-Upload directory:
-
---uploadPath=/path/to/upload/folder
-
-Symbolic links are not supported.
-
-Logging:
-
-Default log folder is the home directoy of the current user.
-
-Default log file name is fileserver.log
-
-Use -DlogDir=... and -DlogFile=... respectively to change the defaults.

@@ -17,7 +17,7 @@ A Spring Boot based server that provides
  ![A demo](demo.png)
  
 <br>
- **Usage**
+**Usage**
  
 Download directories:
 

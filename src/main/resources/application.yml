@@ -1,0 +1,12 @@
+server:
+   port: 80
+   error:
+    include-message: ALWAYS
+# spring cannot parse yaml-lists with - prefix
+# symbolic links are not supported
+#downloadPaths:
+#   /some/path,
+#   /another/download/path
+   
+#uploadPath:
+#    /some/upload/path

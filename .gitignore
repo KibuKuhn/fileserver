@@ -1,0 +1,7 @@
+/target/
+/dependency-reduced-pom.xml
+/manifest.yml
+/mynotes.txt
+/.project
+/.settings/
+/.classpath

@@ -36,20 +36,20 @@ public class FileController {
 
 	@GetMapping(path = "/getNodes", produces = APPLICATION_JSON_VALUE)
 	public List<Node> getNodes(@RequestParam(name = "_") String underscore) throws IOException {
-		log.info("underscore={}", underscore);
+		log.debug("underscore={}", underscore);
 		return fileService.getNodes();
 	}
 
 	@GetMapping(path = "/getTreeData", produces = APPLICATION_JSON_VALUE)
 	public List<Node> getTreeData(@RequestParam Mode mode, @RequestParam String path, @RequestParam(name = "_") String underscore) {
 		var children = fileService.getChildren(path);
-		log.info("Children={}", children);
+		log.debug("Children={}", children);
 		return children;
 	}
 
 	@PostMapping(path = "/download", consumes = APPLICATION_JSON_VALUE)
 	public ResponseEntity<NamedByteArrayResource> download(@RequestBody DownloadRequest body) {
-		log.info("downloadPath={}", body.getUri());
+		log.debug("downloadPath={}", body.getUri());
 		var download = fileService.getDownload(body);
 		//@formatter:off
 		return ResponseEntity.ok()

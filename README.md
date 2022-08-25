@@ -6,6 +6,7 @@
 
  - Problems with VPN on latest Android
  - Don't want to share private data with public clouds from M$, Google, ...
+ - Should run on local raspberry, NUC or something similar 
 
 **Solution**
 

@@ -117,11 +117,13 @@ public class FileService {
 	}
 
 	private Path toPath(String pathString) {
-		if (pathString.startsWith("file:///")) {
-			URI uri = URI.create(pathString);
+		var replaced = pathString.replaceAll("%2520", "%20");		
+		if (replaced.startsWith("file:///")) {
+			URI uri = URI.create(replaced);
 			return Path.of(uri);
 		} else {
-			return Path.of(pathString);
+			replaced = replaced.replaceAll("%20", " ");
+			return Path.of(replaced);
 		}
 	}
 
